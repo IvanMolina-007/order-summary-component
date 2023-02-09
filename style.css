@@ -1,0 +1,136 @@
+:root{
+  --clr_bg: hsl(225, 100%, 94%);
+  --clr_link: hsl(245, 75%, 52%);
+  --clr_pale_blue: hsl(225, 100%, 98%);
+  --clr_paragraph: hsl(224, 23%, 55%);
+  --clr_title: hsl(223, 47%, 23%);
+}
+
+/* Reset */
+*{ margin: 0; box-sizing: border-box;}
+
+img{ max-width: 100%;}
+
+/* tility classes */
+.flex{
+  display: flex;
+}
+
+/* General Styles */
+body{
+  min-height: 100vh;
+  font-family: 'Red Hat Display', sans-serif;
+  background: url(/images/pattern-background-desktop.svg) no-repeat;
+  background-size: contain;
+  background-color: var(--clr_bg);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--clr_paragraph);
+  display: grid;
+  place-content: center;
+}
+
+.card{
+  width: 90%;
+  max-width: 450px;
+  margin-inline: auto;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card__image-container{
+  width: 100%;
+  height: 201px;
+  background: url(./images/illustration-hero.svg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card__order-summary-container{
+  text-align: center;
+  padding: 2.325rem 3.5rem 1.5rem;
+}
+
+.card__title{
+  font-size: 1.6rem;
+  color: var(--clr_title);
+  font-weight: 900;
+  margin-bottom: 0.9rem;
+}
+
+.card__description{
+  font-size: 0.925rem;
+  line-height: 1.7;
+}
+
+.card__plan-container{
+  background-color: var(--clr_pale_blue);
+  margin-inline: 2rem;
+  padding: 1.25rem 1rem;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.9rem;
+}
+
+.card__plan-description{
+  gap: 15px;
+  font-size: 0.9375rem;
+  align-items: center;
+}
+
+.card__plan-type{
+  color: var(--clr_title);
+  font-weight: 900;
+}
+
+.card__plan-price{
+  font-weight: 700;
+  font-size: 0.925rem;
+}
+
+.card__change-link{
+  font-size: 0.8725rem;
+  font-weight: 900;
+  color: var(--clr_link);
+}
+
+.card__change-link:hover{
+  color: var(--clr_paragraph);
+  text-decoration: none;
+}
+
+.button{
+  border: 0;
+  border-radius: 10px;
+  display: block;
+  width: 80%;
+  padding: 0.9rem 2rem;
+  margin-inline: auto;
+  background-color: var(--clr_link);
+  color: var(--clr_pale_blue);
+  font-weight: 900;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 1.7rem;
+  box-shadow: 1px 8px 10px 3px var(--clr_pale_blue);
+}
+
+.button:hover{
+  background-color: var(--clr_paragraph);
+}
+
+.cancel-button{
+  text-align: center;
+  display: block;
+  margin-bottom: 3rem;
+  text-decoration: none;
+  color: var(--clr_paragraph);
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.cancel-button:hover{
+  color: var(--clr_title);
+}
